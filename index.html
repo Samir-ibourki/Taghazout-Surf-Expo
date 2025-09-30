@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Taghazout Surf</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header bg-[#FDF8EE]">
+      <!-- Navbar -->
+
+      <nav
+        class="relative flex justify-between items-center max-w-[90vw] mx-auto py-4"
+      >
+        <div
+          class="Logo italic text-[1.3rem] lg:text-2xl font-bold lg:tracking-[0.3rem]"
+        >
+          <!-- <img class="logo " src="logo.png" alt="logo" /> -->
+          Taghazout <span class="text-[#5A7AA0] underline">Surf</span>
+        </div>
+
+        <!-- start of nav links -->
+        <!-- hidden h-0 lg:h-auto lg:flex flex gap-[2rem] -->
+        <div class="list-lien hidden lg:h-auto lg:flex flex gap-[2rem]">
+          <a
+            href="#about"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-[#5A7AA0] transition-all duration-500 ease-linear"
+          >
+            À Propos
+          </a>
+          <a
+            href="#widget-meteo"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-[#5A7AA0] transition-all duration-500 ease-linear"
+          >
+            Widget Météo
+          </a>
+          <a
+            href="#Programme"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-[#5A7AA0] transition-all duration-500 ease-linear"
+          >
+            Programme
+          </a>
+          <a
+            href="#location"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-[#5A7AA0] transition-all duration-500 ease-linear"
+          >
+            Localisation
+          </a>
+          <a
+            href="#location"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-[#5A7AA0] transition-all duration-500 ease-linear"
+          >
+            Contact
+          </a>
+        </div>
+
+        <button  id="btn-burger" class="lg:hidden cursor-pointer">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </nav>
+      <!-- end of nav links -->
+
+      <!-- hero compenent -->
+      <div class="hero compenent">
+        <div
+          class="hero-banner bg-[url(hero-img.jpg)] bg-cover bg-center bg-no-repeat h-[calc(100vh-62px)] mb-[3rem] text-[#fff] flex flex-col items-center text-center justify-center gap-5"
+        >
+          <h1
+            class="hero-title uppercase font-extrabold text-5xl md:text-6xl text-white drop-shadow-xl tracking-wider leading-tight text-shadow-lg"
+          >
+            taghazout surfing
+          </h1>
+          <p
+            class="hero-text tracking-widest text-xl w-[47rem] leading-9 my-3 w-[75%] font-extrabold text-shadow-lg"
+          >
+            Taghazout Surf Expo est un événement de surf de 3 jours à Taghazout,
+            Maroc
+          </p>
+          <a 
+            href="#Programme"
+            class="uppercase font-extrabold rounded-xl border-solid border-2 px-4 py-3 tracking-[0.4rem] hover:text-[#5A7AA0] hover:bg-white hover:transition-all hover:ease-in-out shadow-2xl"
+            >Discover the Event</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- about section -->
+    <section
+      id="about"
+      class="about mb-[1.5rem] lg:mb-[5rem] max-w-[90vw] mx-auto"
+    >
+      <h1
+        class="text-center color-[#5A7AA0] font-bold mb-6 text-[2.3rem] lg:text-[3.5rem] text-shadow-lg"
+      >
+        About the Event
+      </h1>
+      <article
+        class="flex flex-col-reverse lg:flex-row lg:justify-between max-w-[90vw] mx-auto gap-[1.4rem] mt-[2rem]"
+      >
+        <div
+          class="descrption-event p-5 lg:text-xl tracking-wider leading-[2.3rem] lg:w-[50%]"
+        >
+          Taghazout Surf Expo is a 3-day celebration of surf culture, held on
+          the stunning beaches of Taghazout, Morocco. Join us for exciting surf
+          competitions, exhibitions of the latest surf gear, beginner-friendly
+          surf lessons, local food stalls, live music, and fun beach activities.
+          Every year, around 2,000 surf enthusiasts and visitors gather to
+          experience the ultimate surf festival in Morocco’s surf capital.
+        </div>
+        <div class="some-images shadow-2xl lg:w-[50%]">
+          <img class="w-full" src="images/img2.png" alt="about-img" />
+        </div>
+      </article>
+    </section>
+    <!-- end about section -->
+
+    <!-- Weather Section -->
+    <section id="widget-meteo" class="Weather-Section mb-[2rem] lg:mb-[4rem]">
+      <h1
+        class="text-center color-[#5A7AA0] font-bold mb-6 text-[2.3rem] lg:text-[3.5rem] text-shadow-lg"
+      >
+        Live Surf Conditions
+      </h1>
+      <div
+        class="bg-[url(images/1.png)] lg:bg-[url(images/caption.jpg)] lg:bg-no-repeat lg:bg-cover lg:bg-bottom lg:h-[12rem]"
+      >
+        <div
+          class="weather-cards max-w-[90vw] mx-auto flex lg:flex-row lg:justify-around flex-col justify-center gap-[2rem] p-8 text-white font-semibold items-center h-[100%]"
+        >
+          <div class="card flex gap-[1rem] flex-col items-center">
+            <span>
+              <i class="fas fa-temperature-high text-[2rem] text-[#0077b6]"></i>
+            </span>
+            <span class="text-black lg:text-white">
+              <h3
+                class="mb-[1rem] tracking-[0.3rem] font-semibold text-shadow-lg text-xl"
+              >
+                Temperature
+              </h3>
+              <p class="text-center text-xl" id="temp">-- °C</p>
+            </span>
+          </div>
+          <div class="card flex gap-[1rem] flex-col items-center">
+            <span>
+              <i class="fa-solid fa-wind text-[2rem] text-[#0077b6]"></i>
+            </span>
+            <span class="text-black lg:text-white">
+              <h3
+                class="mb-[1rem] tracking-[0.3rem] font-semibold text-shadow-lg text-xl"
+              >
+                Wind Speed
+              </h3>
+              <p class="text-center text-xl" id="wind">-- km/h</p>
+            </span>
+          </div>
+          <div class="card flex gap-[1rem] flex-col items-center">
+            <span><i class="fas fa-water text-[2rem] text-[#0077b6]"></i></span>
+            <span class="text-black lg:text-white">
+              <h3
+                class="mb-[1rem] tracking-[0.3rem] font-semibold text-shadow-lg text-xl"
+              >
+                Wave Height
+              </h3>
+              <p class="text-center text-xl" id="waves">-- m</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section of widget meteo -->
+
+    <!-- strat section of programm event -->
+    <section id="Programme" class="program-event mb-[5rem]">
+      <h1
+        class="text-center color-[#5A7AA0] font-bold mb-6 text-[2.3rem] lg:text-[3.5rem] text-shadow-lg"
+      >
+        Event Schedule
+      </h1>
+      <div
+        class="program-grid max-w-[90vw] mx-auto flex flex-col lg:flex-row lg:justify-between gap-7"
+      >
+        <main
+          class="lg:w-[30%] border-solid border-1 rounded-2xl p-2 shadow-xl hover:shadow-2xl hover:transition-all hover:ease-linear cursor-pointer"
+        >
+          <div>
+            <img
+              class="h-[20rem] w-full mb-4 rounded-2xl"
+              src="images/surf board.jpg"
+              alt=""
+            />
+          </div>
+          <div class="day p-4">
+            <h3 class="text-center mb-3 text-2xl font-bold text-[#5A7AA0]">
+              Day 1 - Sept 29
+            </h3>
+            <ul>
+              <li>10:00 - Opening Ceremony 🎤</li>
+              <li class="my-3">12:00 - Surf Competitions 🏄</li>
+              <li>16:00 - Food & Music 🎶</li>
+            </ul>
+          </div>
+        </main>
+
+        <main
+          class="lg:w-[30%] border-solid border-1 rounded-2xl p-2 shadow-xl hover:shadow-2xl hover:transition-all hover:ease-linear cursor-pointer"
+        >
+          <div>
+            <img
+              class="h-[20rem] w-full mb-4 rounded-2xl"
+              src="images/competition.jpg"
+              alt=""
+            />
+          </div>
+          <div class="day p-4">
+            <h3 class="text-center mb-3 text-2xl font-bold text-[#5A7AA0]">
+              Day 2 - Sept 30
+            </h3>
+            <ul>
+              <li>09:00 - Surf Classes 🏄‍♀️</li>
+              <li class="my-3">14:00 - Expo 🛹</li>
+              <li>20:00 - Beach Party 🔥</li>
+            </ul>
+          </div>
+        </main>
+
+        <main
+          class="lg:w-[30%] border-solid border-1 rounded-2xl p-2 shadow-xl hover:shadow-2xl hover:transition-all hover:ease-linear cursor-pointer"
+        >
+          <div>
+            <img
+              class="h-[20rem] w-full mb-4 rounded-2xl"
+              src="images/show.jpg"
+              alt=""
+            />
+          </div>
+          <div class="day p-4">
+            <h3 class="text-center mb-3 text-2xl font-bold text-[#5A7AA0]">
+              Day 3 - Oct 1
+            </h3>
+            <ul>
+              <li>08:30 - Surf Finals 🏆</li>
+              <li class="my-3">13:00 - Closing Show 🎸</li>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- end section of program event -->
+
+    <!-- start section of location and contact -->
+
+    <!-- height="300"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"-->
+
+    <section id="location" class="maps w-[90vw] mx-auto mb-[4rem] lg:mb-[6rem]">
+      <h1
+        class="text-center color-[#5A7AA0] font-bold mb-6 text-[2.3rem] lg:text-[3.5rem] text-shadow-lg"
+      >
+        Stay in Touch
+      </h1>
+      <main
+        class="lg:h-[50vh] flex flex-col lg:flex-row gap-7 lg:justify-between"
+      >
+        <div class="italic lg:mt-[4rem] lg:w-[50%]">
+          <p class="font-semibold text-xs mb-[1.1rem]">GET IN TOUCH</p>
+          <h3 class="text-xl font-semibold mb-[1rem]">
+            Visit one of our agency loaction or contact us today
+          </h3>
+
+          <h2 class="font-semibold mb-[1rem]">Head Office</h2>
+
+          <span class="flex gap-[2rem] items-center mb-[0.7rem]">
+            <i class="fa-solid fa-map-pin"></i>
+            <p class="text-[#465b52] text-sm">
+              Taghazout Ocean View, Rle Mhand Idir, Taghazout 80022
+            </p>
+          </span>
+          <span class="flex gap-[2rem] items-center mb-[0.7rem]">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="text-[#465b52]">taghazoutsurfevent26@gmail.com</p>
+          </span>
+          <span class="flex gap-[2rem] items-center mb-[0.7rem]">
+            <i class="fa-solid fa-phone"></i>
+            <p class="text-[#465b52]">+212 567543467</p>
+          </span>
+          <span class="flex gap-[2rem] items-center mb-[0.7rem]">
+            <i class="fa-solid fa-clock"></i>
+            <p class="text-[#465b52]">Monday to saturday: 9.00am to 22.00pm</p>
+          </span>
+        </div>
+
+        <div class="map lg:w-[50%]">
+          <div class="lg:h-[100%]">
+            <iframe
+              class="lg:h-[100%] w-full h-[20rem]"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=agadir+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/">gps devices</a></iframe
+            >
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- end section of location -->
+
+    <!-- start of footer -->
+    <footer class="bg-[#5A7AA0] text-white p-[2rem]">
+      <main class="max-w-[90vw] mx-auto">
+        <div class="list-lien flex flex-wrap justify-center gap-[1rem] mb-4">
+          <a
+            href="#about"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-black transition-all duration-500 ease-linear"
+          >
+            À Propos
+          </a>
+          <a
+            href="#widget-meteo"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-black transition-all duration-500 ease-linear"
+          >
+            Widget Météo
+          </a>
+          <a
+            href="#Programme"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-black transition-all duration-500 ease-linear"
+          >
+            Programme
+          </a>
+          <a
+            href="#location"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-black transition-all duration-500 ease-linear"
+          >
+            Localisation
+          </a>
+          <a
+            href="#contact"
+            class="cursor-pointer font-semibold hover:translate-y-[-10%] hover:text-black transition-all duration-500 ease-linear"
+          >
+            Contact
+          </a>
+        </div>
+
+        <div
+          class="nav-icons space-x-1 px-2 flex justify-center space-x-8 mb-4"
+        >
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="nav-ico text-white hover:text-gray-500"
+            ><i class="fab fa-facebook hover:translate-y-[-10%]"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="nav-ico text-white hover:text-gray-500 hover:translate-y-[-10%]"
+          >
+            <i class="fa-brands fa-instagram hover:translate-y-[-10%]"></i
+          ></a>
+          <a
+            href="https://www.github.com"
+            target="_blank"
+            class="nav-icon text-white hover:text-gray-500 hover:translate-y-[-10%]"
+            ><i class="fa-brands fa-github hover:translate-y-[-10%]"></i
+          ></a>
+          <!-- end of nav social media icons -->
+        </div>
+        <div class="text-center lg:text-2xl font-semibold">
+          &copy; 2025 Taghazout Surf Expo.
+        </div>
+      </main>
+    </footer>
+
+    <script src="scrpit.js"></script>
+  </body>
+</html>
