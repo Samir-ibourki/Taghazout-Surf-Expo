@@ -19,7 +19,7 @@ btnBurger.addEventListener('click',createBG)
 let city = 'taghazout'
 let key = '5b3e9a2401bd59d737432b93ebee4c4e'
 let web = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric&lang=fr`
-console.log(web);
+
 
 
 async function getData(web) {
@@ -32,14 +32,39 @@ async function getData(web) {
 getData(web)
 
 
+////////////////
+// declare elements for form 
+let btnSubmit = document.querySelector('.btnSubmit')
+let fullName = document.getElementById('fullName')
+let email = document.getElementById('email')
+let tele = document.getElementById('tele')
+ 
+let data = {}
+function addContact(e) {
+e.preventDefault()
+  let nameContent = fullName.value
+  let emailContent = email.value
+  let teleContent = tele.value
 
 
+if (nameContent === '' || emailContent === '' || teleContent=== '') {
+ alert('svp enter your information')
+  
+}else{
+  let p = document.createElement('p')
+  p.className ='text-center text-[green] text-2xl font-semibold mt-4 capitalixe shadow-xl'
+  p.innerHTML = 'your information has submitted , wait for our response'
+  document.querySelector('.main').appendChild(p)
 
-
-
-
-
-
+  localStorage.setItem('name', nameContent)
+localStorage.setItem('email', emailContent)
+localStorage.setItem('tele', teleContent)
+}
+fullName.value = ''
+email.value = ''
+tele.value = ''
+}
+btnSubmit.addEventListener('click', addContact)
 
 
 
